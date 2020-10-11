@@ -24,6 +24,7 @@ SRP keeps modules separated, OCP keeps code free of need for modifications, LSP 
 4. Setup database settings inside `ormconfig.json` file
 5. Create a env file with the required data. Take example from `.env.sample` file
 6. Run `npm start` command
+7. A `postman collection file` is also included in the Repository to get a glimpse of How each API is called.
 
 ## Assumptions
 
