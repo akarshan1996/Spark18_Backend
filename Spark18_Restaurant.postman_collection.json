@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "3d2ecf33-757a-4ecd-a233-3cf08b68eec7",
+		"name": "Spark18_Restaurant",
+		"description": "This project contains all the apis from Spark18_Resto project.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Restaurant API",
+			"item": [
+				{
+					"name": "localhost:3000/restaurants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/restaurants",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"restaurants"
+							]
+						},
+						"description": "Get request to restaurant"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/restaurants/restroId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/restaurants/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"restaurants",
+								"3"
+							]
+						},
+						"description": "Get request to restaurant"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/restaurants",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/Users/akarshan.gupta/Downloads/27244967.jpg"
+								},
+								{
+									"key": "name",
+									"value": "GHI",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Bangalore",
+									"type": "text"
+								},
+								{
+									"key": "opening_hours",
+									"value": "[['10:00', '16:00'],['10:00', '14: 00'],['10:00', '14: 00'],['10:00', '14: 00'],['10:00', '14: 00'],['10:00', '14: 00'],['10:00', '14: 00']]",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/restaurants",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"restaurants"
+							]
+						},
+						"description": "post request to restaurant"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/restaurants/restroId",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "opening_hours",
+									"value": "{\"wednesday\": \"10:00 to 20:00\"}",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "MNO",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/restaurants/13",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"restaurants",
+								"13"
+							]
+						},
+						"description": "patch request to update existing restaurant"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/restaurants/restroId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/restaurants/12",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"restaurants",
+								"12"
+							]
+						},
+						"description": "delete request to restaurant\n"
+					},
+					"response": []
+				}
+			],
+			"description": "This folder contains the API related to Restaurant.",
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Product with Product Sale API",
+			"item": [
+				{
+					"name": "localhost:3000/restaurants/restroId/products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/restaurants/3/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"restaurants",
+								"3",
+								"products"
+							]
+						},
+						"description": "Get request to restaurant"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/restaurants/restroId/products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/Users/akarshan.gupta/Downloads/27244967.jpg"
+								},
+								{
+									"key": "name",
+									"value": "Product One",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "general",
+									"type": "text"
+								},
+								{
+									"key": "sale",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "FRee",
+									"type": "text"
+								},
+								{
+									"key": "promotional_price",
+									"value": "500",
+									"type": "text"
+								},
+								{
+									"key": "sale_time",
+									"value": "[['10:00', '16:00'],['10:00', '14: 00'],['10:00', '14: 00'],['10:00', '14: 00'],['10:00', '14: 00'],['10:00', '14: 00'],['10:00', '14: 00']]",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/restaurants/3/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"restaurants",
+								"3",
+								"products"
+							]
+						},
+						"description": "post request to restaurant"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/products/productId",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "restro",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/Users/akarshan.gupta/Downloads/dummy-image.png"
+								},
+								{
+									"key": "name",
+									"value": "Product fdfaHello",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "music",
+									"type": "text"
+								},
+								{
+									"key": "sale",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Free Free Free",
+									"type": "text"
+								},
+								{
+									"key": "promotional_price",
+									"value": "700",
+									"type": "text"
+								},
+								{
+									"key": "sale_time",
+									"value": "{\"friday\": \"10:00 to 14:14\", \"tuesday\": \"10:00 to 14:00\"}",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/products/11",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"11"
+							]
+						},
+						"description": "post request to restaurant"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/products/productId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/products/17",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"17"
+							]
+						},
+						"description": "delete request to restaurant\n"
+					},
+					"response": []
+				}
+			],
+			"description": "This folder contains the API related to Restaurant.",
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
